@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BB38B0F5E494CCC9A3D82EC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3178972E9A4019BA7E06E3 /* libPods.a */; };
+		BCF862DC1999B85400866768 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF862DB1999B85400866768 /* Foundation.framework */; };
+		BCF862DE1999B85400866768 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF862DD1999B85400866768 /* CoreGraphics.framework */; };
+		BCF862E01999B85400866768 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF862DF1999B85400866768 /* UIKit.framework */; };
+		BCF862E61999B85400866768 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCF862E41999B85400866768 /* InfoPlist.strings */; };
+		BCF862E81999B85400866768 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF862E71999B85400866768 /* main.m */; };
+		BCF862EC1999B85400866768 /* CSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF862EB1999B85400866768 /* CSAppDelegate.m */; };
+		BCF862EF1999B85400866768 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF862ED1999B85400866768 /* Main_iPhone.storyboard */; };
+		BCF862F21999B85400866768 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF862F01999B85400866768 /* Main_iPad.storyboard */; };
+		BCF862F71999B85400866768 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF862F61999B85400866768 /* Images.xcassets */; };
+		BCF862FE1999B85400866768 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF862FD1999B85400866768 /* XCTest.framework */; };
+		BCF862FF1999B85400866768 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF862DB1999B85400866768 /* Foundation.framework */; };
+		BCF863001999B85400866768 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF862DF1999B85400866768 /* UIKit.framework */; };
+		BCF863081999B85400866768 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCF863061999B85400866768 /* InfoPlist.strings */; };
+		BCF8630A1999B85400866768 /* RafavisionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF863091999B85400866768 /* RafavisionTests.m */; };
+		BCF863331999BEE300866768 /* CSImageSearchDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8632A1999BEE300866768 /* CSImageSearchDatasource.m */; };
+		BCF863341999BEE300866768 /* CSImageSearchDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8632A1999BEE300866768 /* CSImageSearchDatasource.m */; };
+		BCF863351999BEE300866768 /* CSPastSearchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8632C1999BEE300866768 /* CSPastSearchHelper.m */; };
+		BCF863361999BEE300866768 /* CSPastSearchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8632C1999BEE300866768 /* CSPastSearchHelper.m */; };
+		BCF863371999BEE300866768 /* CSImageSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8632F1999BEE300866768 /* CSImageSearchViewController.m */; };
+		BCF863381999BEE300866768 /* CSImageSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8632F1999BEE300866768 /* CSImageSearchViewController.m */; };
+		BCF863391999BEE300866768 /* CSImageSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF863321999BEE300866768 /* CSImageSearchResultCell.m */; };
+		BCF8633A1999BEE300866768 /* CSImageSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF863321999BEE300866768 /* CSImageSearchResultCell.m */; };
+		BCF8633D1999C55400866768 /* CSGoogleRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8633C1999C55300866768 /* CSGoogleRequestHelper.m */; };
+		BCF863401999CD2300866768 /* CSImageSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8633F1999CD2300866768 /* CSImageSearchResult.m */; };
+		BCF863441999DF3F00866768 /* CSSearchHistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF863421999DF3F00866768 /* CSSearchHistoryCell.m */; };
+		BCF863451999DF3F00866768 /* CSSearchHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF863431999DF3F00866768 /* CSSearchHistoryCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCF863011999B85400866768 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCF862D01999B85400866768 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF862D71999B85400866768;
+			remoteInfo = Rafavision;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0004B141D77F4BD8B7A61D46 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		BCF862D81999B85400866768 /* Rafavision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rafavision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF862DB1999B85400866768 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BCF862DD1999B85400866768 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BCF862DF1999B85400866768 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BCF862E31999B85400866768 /* Rafavision-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rafavision-Info.plist"; sourceTree = "<group>"; };
+		BCF862E51999B85400866768 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BCF862E71999B85400866768 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCF862E91999B85400866768 /* Rafavision-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rafavision-Prefix.pch"; sourceTree = "<group>"; };
+		BCF862EA1999B85400866768 /* CSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAppDelegate.h; sourceTree = "<group>"; };
+		BCF862EB1999B85400866768 /* CSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAppDelegate.m; sourceTree = "<group>"; };
+		BCF862EE1999B85400866768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		BCF862F11999B85400866768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		BCF862F61999B85400866768 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BCF862FC1999B85400866768 /* RafavisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RafavisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF862FD1999B85400866768 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BCF863051999B85400866768 /* RafavisionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RafavisionTests-Info.plist"; sourceTree = "<group>"; };
+		BCF863071999B85400866768 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BCF863091999B85400866768 /* RafavisionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RafavisionTests.m; sourceTree = "<group>"; };
+		BCF863291999BEE300866768 /* CSImageSearchDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSImageSearchDatasource.h; sourceTree = "<group>"; };
+		BCF8632A1999BEE300866768 /* CSImageSearchDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSImageSearchDatasource.m; sourceTree = "<group>"; };
+		BCF8632B1999BEE300866768 /* CSPastSearchHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPastSearchHelper.h; sourceTree = "<group>"; };
+		BCF8632C1999BEE300866768 /* CSPastSearchHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPastSearchHelper.m; sourceTree = "<group>"; };
+		BCF8632E1999BEE300866768 /* CSImageSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSImageSearchViewController.h; sourceTree = "<group>"; };
+		BCF8632F1999BEE300866768 /* CSImageSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSImageSearchViewController.m; sourceTree = "<group>"; };
+		BCF863311999BEE300866768 /* CSImageSearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSImageSearchResultCell.h; sourceTree = "<group>"; };
+		BCF863321999BEE300866768 /* CSImageSearchResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSImageSearchResultCell.m; sourceTree = "<group>"; };
+		BCF8633B1999C55300866768 /* CSGoogleRequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSGoogleRequestHelper.h; sourceTree = "<group>"; };
+		BCF8633C1999C55300866768 /* CSGoogleRequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSGoogleRequestHelper.m; sourceTree = "<group>"; };
+		BCF8633E1999CD2300866768 /* CSImageSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSImageSearchResult.h; sourceTree = "<group>"; };
+		BCF8633F1999CD2300866768 /* CSImageSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSImageSearchResult.m; sourceTree = "<group>"; };
+		BCF863411999DF3F00866768 /* CSSearchHistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSearchHistoryCell.h; sourceTree = "<group>"; };
+		BCF863421999DF3F00866768 /* CSSearchHistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSearchHistoryCell.m; sourceTree = "<group>"; };
+		BCF863431999DF3F00866768 /* CSSearchHistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSSearchHistoryCell.xib; sourceTree = "<group>"; };
+		CD3178972E9A4019BA7E06E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCF862D51999B85400866768 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF862DE1999B85400866768 /* CoreGraphics.framework in Frameworks */,
+				BCF862E01999B85400866768 /* UIKit.framework in Frameworks */,
+				BCF862DC1999B85400866768 /* Foundation.framework in Frameworks */,
+				5BB38B0F5E494CCC9A3D82EC /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF862F91999B85400866768 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF862FE1999B85400866768 /* XCTest.framework in Frameworks */,
+				BCF863001999B85400866768 /* UIKit.framework in Frameworks */,
+				BCF862FF1999B85400866768 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCF862CF1999B85400866768 = {
+			isa = PBXGroup;
+			children = (
+				BCF862E11999B85400866768 /* Rafavision */,
+				BCF863031999B85400866768 /* RafavisionTests */,
+				BCF862DA1999B85400866768 /* Frameworks */,
+				BCF862D91999B85400866768 /* Products */,
+				0004B141D77F4BD8B7A61D46 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		BCF862D91999B85400866768 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCF862D81999B85400866768 /* Rafavision.app */,
+				BCF862FC1999B85400866768 /* RafavisionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCF862DA1999B85400866768 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCF862DB1999B85400866768 /* Foundation.framework */,
+				BCF862DD1999B85400866768 /* CoreGraphics.framework */,
+				BCF862DF1999B85400866768 /* UIKit.framework */,
+				BCF862FD1999B85400866768 /* XCTest.framework */,
+				CD3178972E9A4019BA7E06E3 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCF862E11999B85400866768 /* Rafavision */ = {
+			isa = PBXGroup;
+			children = (
+				BCF863271999BEE300866768 /* Data */,
+				BCF863281999BEE300866768 /* Helpers */,
+				BCF8632D1999BEE300866768 /* View Controllers */,
+				BCF863301999BEE300866768 /* Views */,
+				BCF862EA1999B85400866768 /* CSAppDelegate.h */,
+				BCF862EB1999B85400866768 /* CSAppDelegate.m */,
+				BCF862ED1999B85400866768 /* Main_iPhone.storyboard */,
+				BCF862F01999B85400866768 /* Main_iPad.storyboard */,
+				BCF862F61999B85400866768 /* Images.xcassets */,
+				BCF862E21999B85400866768 /* Supporting Files */,
+			);
+			path = Rafavision;
+			sourceTree = "<group>";
+		};
+		BCF862E21999B85400866768 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCF862E31999B85400866768 /* Rafavision-Info.plist */,
+				BCF862E41999B85400866768 /* InfoPlist.strings */,
+				BCF862E71999B85400866768 /* main.m */,
+				BCF862E91999B85400866768 /* Rafavision-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCF863031999B85400866768 /* RafavisionTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCF863091999B85400866768 /* RafavisionTests.m */,
+				BCF863041999B85400866768 /* Supporting Files */,
+			);
+			path = RafavisionTests;
+			sourceTree = "<group>";
+		};
+		BCF863041999B85400866768 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCF863051999B85400866768 /* RafavisionTests-Info.plist */,
+				BCF863061999B85400866768 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCF863271999BEE300866768 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8633E1999CD2300866768 /* CSImageSearchResult.h */,
+				BCF8633F1999CD2300866768 /* CSImageSearchResult.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BCF863281999BEE300866768 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BCF863291999BEE300866768 /* CSImageSearchDatasource.h */,
+				BCF8632A1999BEE300866768 /* CSImageSearchDatasource.m */,
+				BCF8632B1999BEE300866768 /* CSPastSearchHelper.h */,
+				BCF8632C1999BEE300866768 /* CSPastSearchHelper.m */,
+				BCF8633B1999C55300866768 /* CSGoogleRequestHelper.h */,
+				BCF8633C1999C55300866768 /* CSGoogleRequestHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BCF8632D1999BEE300866768 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8632E1999BEE300866768 /* CSImageSearchViewController.h */,
+				BCF8632F1999BEE300866768 /* CSImageSearchViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BCF863301999BEE300866768 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCF863311999BEE300866768 /* CSImageSearchResultCell.h */,
+				BCF863321999BEE300866768 /* CSImageSearchResultCell.m */,
+				BCF863411999DF3F00866768 /* CSSearchHistoryCell.h */,
+				BCF863421999DF3F00866768 /* CSSearchHistoryCell.m */,
+				BCF863431999DF3F00866768 /* CSSearchHistoryCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCF862D71999B85400866768 /* Rafavision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF8630D1999B85400866768 /* Build configuration list for PBXNativeTarget "Rafavision" */;
+			buildPhases = (
+				18595DE0C1F744D394050648 /* Check Pods Manifest.lock */,
+				BCF862D41999B85400866768 /* Sources */,
+				BCF862D51999B85400866768 /* Frameworks */,
+				BCF862D61999B85400866768 /* Resources */,
+				E358AAE6EAB04DFEA6C9C5C9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rafavision;
+			productName = Rafavision;
+			productReference = BCF862D81999B85400866768 /* Rafavision.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCF862FB1999B85400866768 /* RafavisionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF863101999B85400866768 /* Build configuration list for PBXNativeTarget "RafavisionTests" */;
+			buildPhases = (
+				BCF862F81999B85400866768 /* Sources */,
+				BCF862F91999B85400866768 /* Frameworks */,
+				BCF862FA1999B85400866768 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCF863021999B85400866768 /* PBXTargetDependency */,
+			);
+			name = RafavisionTests;
+			productName = RafavisionTests;
+			productReference = BCF862FC1999B85400866768 /* RafavisionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCF862D01999B85400866768 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Scott Marchington";
+				TargetAttributes = {
+					BCF862FB1999B85400866768 = {
+						TestTargetID = BCF862D71999B85400866768;
+					};
+				};
+			};
+			buildConfigurationList = BCF862D31999B85400866768 /* Build configuration list for PBXProject "Rafavision" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCF862CF1999B85400866768;
+			productRefGroup = BCF862D91999B85400866768 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCF862D71999B85400866768 /* Rafavision */,
+				BCF862FB1999B85400866768 /* RafavisionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCF862D61999B85400866768 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF862F21999B85400866768 /* Main_iPad.storyboard in Resources */,
+				BCF862F71999B85400866768 /* Images.xcassets in Resources */,
+				BCF863451999DF3F00866768 /* CSSearchHistoryCell.xib in Resources */,
+				BCF862EF1999B85400866768 /* Main_iPhone.storyboard in Resources */,
+				BCF862E61999B85400866768 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF862FA1999B85400866768 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF863081999B85400866768 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18595DE0C1F744D394050648 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E358AAE6EAB04DFEA6C9C5C9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCF862D41999B85400866768 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF863441999DF3F00866768 /* CSSearchHistoryCell.m in Sources */,
+				BCF862EC1999B85400866768 /* CSAppDelegate.m in Sources */,
+				BCF863391999BEE300866768 /* CSImageSearchResultCell.m in Sources */,
+				BCF863371999BEE300866768 /* CSImageSearchViewController.m in Sources */,
+				BCF863331999BEE300866768 /* CSImageSearchDatasource.m in Sources */,
+				BCF862E81999B85400866768 /* main.m in Sources */,
+				BCF863401999CD2300866768 /* CSImageSearchResult.m in Sources */,
+				BCF8633D1999C55400866768 /* CSGoogleRequestHelper.m in Sources */,
+				BCF863351999BEE300866768 /* CSPastSearchHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF862F81999B85400866768 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF863341999BEE300866768 /* CSImageSearchDatasource.m in Sources */,
+				BCF8633A1999BEE300866768 /* CSImageSearchResultCell.m in Sources */,
+				BCF863361999BEE300866768 /* CSPastSearchHelper.m in Sources */,
+				BCF863381999BEE300866768 /* CSImageSearchViewController.m in Sources */,
+				BCF8630A1999B85400866768 /* RafavisionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCF863021999B85400866768 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCF862D71999B85400866768 /* Rafavision */;
+			targetProxy = BCF863011999B85400866768 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCF862E41999B85400866768 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF862E51999B85400866768 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BCF862ED1999B85400866768 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF862EE1999B85400866768 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		BCF862F01999B85400866768 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF862F11999B85400866768 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		BCF863061999B85400866768 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF863071999B85400866768 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCF8630B1999B85400866768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCF8630C1999B85400866768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCF8630E1999B85400866768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0004B141D77F4BD8B7A61D46 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rafavision/Rafavision-Prefix.pch";
+				INFOPLIST_FILE = "Rafavision/Rafavision-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BCF8630F1999B85400866768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0004B141D77F4BD8B7A61D46 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rafavision/Rafavision-Prefix.pch";
+				INFOPLIST_FILE = "Rafavision/Rafavision-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BCF863111999B85400866768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rafavision.app/Rafavision";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rafavision/Rafavision-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RafavisionTests/RafavisionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BCF863121999B85400866768 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rafavision.app/Rafavision";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rafavision/Rafavision-Prefix.pch";
+				INFOPLIST_FILE = "RafavisionTests/RafavisionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCF862D31999B85400866768 /* Build configuration list for PBXProject "Rafavision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF8630B1999B85400866768 /* Debug */,
+				BCF8630C1999B85400866768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF8630D1999B85400866768 /* Build configuration list for PBXNativeTarget "Rafavision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF8630E1999B85400866768 /* Debug */,
+				BCF8630F1999B85400866768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF863101999B85400866768 /* Build configuration list for PBXNativeTarget "RafavisionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF863111999B85400866768 /* Debug */,
+				BCF863121999B85400866768 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCF862D01999B85400866768 /* Project object */;
+}

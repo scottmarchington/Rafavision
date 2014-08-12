@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SN6-UK-ZbJ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="gJP-py-ul0">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="SN6-UK-ZbJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cyx-W4-noq">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Ff7-u8-kRW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UPy-zS-nEx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-486" y="-90"/>
+        </scene>
+        <!--Image Search View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="CSImageSearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zYa-dI-HMR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.39000000000000001" colorSpace="calibratedWhite"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="44" maxX="0.0" maxY="0.0"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c27-RV-iLt">
+                                    <size key="itemSize" width="100" height="140"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CSImageSearchResultCell" id="Sqp-01-b7q" customClass="CSImageSearchResultCell">
+                                        <rect key="frame" x="0.0" y="64" width="100" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zod-V7-wRh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="zod-V7-wRh" firstAttribute="top" secondItem="Sqp-01-b7q" secondAttribute="top" id="Mk0-jg-06l"/>
+                                            <constraint firstAttribute="bottom" secondItem="zod-V7-wRh" secondAttribute="bottom" id="PvI-cg-Rtk"/>
+                                            <constraint firstItem="zod-V7-wRh" firstAttribute="leading" secondItem="Sqp-01-b7q" secondAttribute="leading" id="RWc-Pg-Nce"/>
+                                            <constraint firstAttribute="trailing" secondItem="zod-V7-wRh" secondAttribute="trailing" id="WBf-Z2-O2D"/>
+                                        </constraints>
+                                        <size key="customSize" width="100" height="140"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="zod-V7-wRh" id="Ryv-oi-Ubg"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="WcZ-xf-hTy"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="jWT-Nx-zaQ"/>
+                                </connections>
+                            </collectionView>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="ElG-3m-9dB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="oMM-Lz-n8R"/>
+                                </constraints>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="Vjd-o5-J3Y"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ElG-3m-9dB" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-64" id="0Yn-pa-gJt"/>
+                            <constraint firstItem="zYa-dI-HMR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="1U7-pQ-kIE"/>
+                            <constraint firstItem="ElG-3m-9dB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="9R4-Cm-ldn"/>
+                            <constraint firstAttribute="trailing" secondItem="ElG-3m-9dB" secondAttribute="trailing" id="JVm-LG-w5l"/>
+                            <constraint firstItem="zYa-dI-HMR" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="lIX-ua-kC8"/>
+                            <constraint firstAttribute="trailing" secondItem="zYa-dI-HMR" secondAttribute="trailing" id="pF7-F4-Ott"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="zYa-dI-HMR" secondAttribute="bottom" id="wlM-N7-3dm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rY3-HV-KnH">
+                        <connections>
+                            <outlet property="titleView" destination="ElG-3m-9dB" id="oW3-ff-Tnx"/>
+                        </connections>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="zYa-dI-HMR" id="nVI-4c-8RH"/>
+                        <outlet property="searchBar" destination="ElG-3m-9dB" id="Boc-Lh-5ic"/>
+                        <outlet property="searchDisplayController" destination="qFN-pE-Jpc" id="RdJ-gW-YQ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <searchDisplayController searchResultsTitle="Past Searches" id="qFN-pE-Jpc">
+                    <connections>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="bK4-rj-Wat"/>
+                        <outlet property="searchBar" destination="ElG-3m-9dB" id="DO6-Qt-zXg"/>
+                        <outlet property="searchContentsController" destination="vXZ-lx-hvc" id="POl-L3-c09"/>
+                        <outlet property="searchResultsDataSource" destination="vXZ-lx-hvc" id="VbH-3K-yhV"/>
+                        <outlet property="searchResultsDelegate" destination="vXZ-lx-hvc" id="ucl-j3-cWd"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
